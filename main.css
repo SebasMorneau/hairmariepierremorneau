@@ -1,0 +1,209 @@
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.showcase::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("img/hair1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.content .logo {
+  margin-left: -40px;
+  height: 400px;
+  width: 400px;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  color: #c0c0c0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  color: #696969;
+}
+
+.grid-2 .fas:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.profile_card {
+  height: 500px;
+  width: 300px;
+  background-color: #fff5ee;
+  box-shadow: 2px 2px 6px #000;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: -65px;
+  margin-bottom: -35px;
+}
+
+.card {
+  height: 350px;
+  width: 300px;
+  background: url(img/profil_marie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+}
+
+.profile_card h3,
+.profile_card p {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.profile_card ul {
+  list-style: none;
+  display: flex;
+  color: black;
+  margin-left: 75px;
+  padding-top: 10px;
+}
+
+ul li {
+  padding-left: 10px;
+  font-size: 18px;
+  transition: 1s;
+}
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+.social_icon:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@media (min-width: 891px) {
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  .showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+}
+
+/* Small Screens */
+@media (max-width: 890px) {
+  .showcase::after {
+    height: 70vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    margin-left: -20px;
+    height: 340px;
+    width: 340px;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 .fas {
+    font-size: 50px;
+  }
+
+  .services div:nth-child(-n + 2) {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+
+  .profile_card {
+    grid-gap: 0px;
+    margin-top: -65px;
+    margin-bottom: -35px;
+  }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 0;
+  }
+}
