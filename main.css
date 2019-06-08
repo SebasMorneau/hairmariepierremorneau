@@ -64,19 +64,17 @@ body {
 
 .grid-2 {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  color: #696969;
-}
-
-.grid-2 .fas:hover {
-  cursor: pointer;
-  color: black;
 }
 
 .center {
   text-align: center;
   margin: auto;
+}
+
+.left {
+  margin-left: 30px;
 }
 
 .bg-light {
@@ -88,16 +86,66 @@ body {
   background: #333;
   color: #f4f4f4;
 }
+/* Section de selection */
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
+/* Change color of buttons on hover */
+.about button:hover {
+  color: rgb(187, 158, 158);
+}
+
+/* Create an active/current tablink class */
+.about button.active {
+  color: rgb(187, 158, 158);
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+.tablinks {
+  margin-bottom: -50px;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Carte de profil */
 .profile_card {
   height: 500px;
   width: 300px;
   background-color: #fff5ee;
-  box-shadow: 2px 2px 6px #000;
-  border-radius: 20px;
   overflow: hidden;
-  margin-top: -65px;
-  margin-bottom: -35px;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -123,7 +171,7 @@ body {
   display: flex;
   color: black;
   margin-left: 75px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 ul li {
@@ -131,6 +179,55 @@ ul li {
   font-size: 18px;
   transition: 1s;
 }
+
+/* Prix */
+#cash .grid-2 {
+  background-color: #fff5ee;
+}
+
+h4 {
+  text-decoration-line: underline;
+}
+h4:after {
+  content: "\00a0\00a0\00a0\00a0\00a0
+  \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0
+  \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0
+  \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+.left p {
+  font-size: 11px;
+  color: #330;
+}
+
+/* Scheduled */
+.scheduled {
+  height: 60vh;
+  width: 100%;
+  background-image: url("img/scheduledCover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scheduled {
+  color: #fff;
+}
+
+.scheduled i {
+  font-size: 25px;
+}
+.scheduled p {
+  font-size: 11px;
+}
+.jour {
+  margin-left: 20px;
+}
+.tyty {
+  margin-bottom: 200px;
+}
+
+/* Footer */
 footer {
   padding: 2.2rem;
 }
@@ -143,7 +240,7 @@ footer p {
   color: white;
 }
 
-@media (min-width: 891px) {
+@media (min-width: 801px) {
   .showcase:hover::after {
     filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -156,7 +253,7 @@ footer p {
 }
 
 /* Small Screens */
-@media (max-width: 890px) {
+@media (max-width: 800px) {
   .showcase::after {
     height: 70vh;
   }
@@ -176,6 +273,10 @@ footer p {
     display: none;
   }
 
+  .title p {
+    font-size: 30px;
+  }
+
   .grid-3 {
     grid-template-columns: 1fr;
   }
@@ -184,15 +285,84 @@ footer p {
     font-size: 50px;
   }
 
+  .tablinks {
+    margin-bottom: -65px;
+  }
+  .left p {
+    font-size: 9px;
+  }
+  .left {
+    margin-left: 3px;
+  }
+  .left h5 {
+    font-size: 10px;
+  }
   .services div:nth-child(-n + 2) {
     border-bottom: #333 dashed 1px;
     padding: 1.2rem 1rem;
   }
 
+  ul li {
+    padding-left: 25px;
+    font-size: 15px;
+  }
+
   .profile_card {
-    grid-gap: 0px;
-    margin-top: -65px;
-    margin-bottom: -35px;
+    height: 550px;
+    width: 350px;
+  }
+
+  .card {
+    height: 400px;
+    width: 350px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  }
+}
+/* iPhone <= 6, SE */
+@media (max-height: 700px) {
+  .content {
+    top: 5%;
+  }
+  .title p {
+    margin-top: -60px;
+    font-size: 23px;
+  }
+  .left p {
+    font-size: 8px;
+  }
+  .left {
+    margin-left: 3px;
+  }
+  .left h5 {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  .grid-2 h3 {
+    font-size: 13px;
+  }
+  .grid-2 .fas {
+    font-size: 30px;
+  }
+
+  .profile_card {
+    height: 450px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    height: 300px;
+    width: 250px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  ul li {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-right: -55px;
   }
 }
 

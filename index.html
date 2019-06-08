@@ -22,7 +22,7 @@
     <header class="showcase">
       <div class="content">
         <img src="img/logo.PNG" class="logo" alt="coiffure prestige" />
-        <div class="title">Une équipes de passionnées</div>
+        <div class="title"><p>Une équipes de passionnées</p></div>
         <div class="text">Professionnelle Schwarzkopf</div>
       </div>
     </header>
@@ -61,82 +61,191 @@
     <section class="about bg-light">
       <div class="container">
         <div class="grid-2">
-          <div class="center">
+          <button class="tablinks center" onclick="openTab(event, 'staff')">
             <i class="fas fa-cut fa-7x"></i>
             <div><h3>Notre Équipe</h3></div>
-          </div>
-          <div class="center">
+          </button>
+          <button class="tablinks center" onclick="openTab(event, 'cash')">
             <i class="fas fa-comments-dollar fa-7x"></i>
             <div><h3>Nos Tarifs</h3></div>
-          </div>
+          </button>
         </div>
       </div>
 
       <!-- STAFF -->
-      <div class="grid-3">
+      <div id="staff" class="tabcontent">
+        <!-- cards de profil -->
         <div class="container">
-          <div class="center">
-            <div class="profile_card">
-              <div class="card"></div>
-              <h3>MARIE-PIERRE MORNEAU</h3>
-              <p>Professionnelle depuis 2012</p>
-              <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fas fa-phone"></i></li>
-              </ul>
+          <div class="grid-3">
+            <div class="center">
+              <div class="profile_card">
+                <div class="card"></div>
+                <h3>MARIE-PIERRE MORNEAU</h3>
+                <p>Professionnelle depuis 2012</p>
+                <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container">
-          <div class="center">
-            <div class="profile_card">
-              <div class="card"></div>
-              <h3>MARIE-PIERRE MORNEAU</h3>
-              <p>Professionnelle depuis 2012</p>
-              <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fas fa-phone"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            <!-- cards de profil -->
 
-        <div class="container">
-          <div class="center">
-            <div class="profile_card">
-              <div class="card"></div>
-              <h3>MARIE-PIERRE MORNEAU</h3>
-              <p>Professionnelle depuis 2012</p>
-              <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fas fa-phone"></i></li>
-              </ul>
+            <div class="center">
+              <div class="profile_card">
+                <div class="card"></div>
+                <h3>MARIE-PIERRE MORNEAU</h3>
+                <p>Professionnelle depuis 2012</p>
+                <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container">
-          <div class="center">
-            <div class="profile_card">
-              <div class="card"></div>
-              <h3>MARIE-PIERRE MORNEAU</h3>
-              <p>Professionnelle depuis 2012</p>
-              <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fas fa-phone"></i></li>
-              </ul>
+            <!-- cards de profil -->
+
+            <div class="center">
+              <div class="profile_card">
+                <div class="card"></div>
+                <h3>MARIE-PIERRE MORNEAU</h3>
+                <p>Professionnelle depuis 2012</p>
+                <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul>
+              </div>
             </div>
+
+            <!-- cards de profil -->
+
+            <!-- <div class="center">
+              <div class="profile_card">
+                <div class="card"></div>
+                <h3>MARIE-PIERRE MORNEAU</h3>
+                <p>Professionnelle depuis 2012</p>
+                <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul>
+              </div>
+            </div> -->
+
+            <!-- fin du grid-3 -->
           </div>
+          <!-- fin du container -->
         </div>
-        <!-- fin du grid-3 -->
+        <!-- fin du tabcontent -->
       </div>
+      <!-- Prix -->
+      <div id="cash" class="tabcontent">
+        <div class="container">
+          <h4>Services</h4>
+          <div class="grid-2">
+            <div class="left">
+              <h5>
+                Mèche au papier standard
+              </h5>
+              <p>Durée flexible / 55$ à 140$</p>
+              <p>Avec coup et mise en plis inclus.</p>
+            </div>
+            <div class="left">
+              <h5>
+                Technique balayage/ombré
+              </h5>
+              <p>Durée flexible / 75$ à 170$</p>
+              <p>Avec coup et mise en plis inclus.</p>
+            </div>
+            <div class="left">
+              <h5>
+                Coloration/coupe/mise en plis
+              </h5>
+              <p>Durée flexible / 58$</p>
+              <p>Ajustement de prix pour extra tube.</p>
+            </div>
+            <div class="left">
+              <h5>
+                Coiffure haute
+              </h5>
+              <p>Durée flexible / 35$</p>
+            </div>
+            <div class="left">
+              <h5>
+                Mise en plis
+              </h5>
+              <p>Durée flexible / 21$</p>
+            </div>
+            <div class="left">
+              <h5>
+                Coupe + mise en plis
+              </h5>
+              <p>Durée flexible / 36$</p>
+            </div>
+            <div class="left">
+              <h5>
+                Coupe homme
+              </h5>
+              <p>Durée flexible / 16$</p>
+            </div>
+            <div class="left">
+              <h5>
+                Coupe femme
+              </h5>
+              <p>Durée flexible / 21$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- fin de la section -->
     </section>
+
+    <!-- Section horaire -->
+
+    <div class="scheduled">
+      <div class="container grid-2 center">
+        <!-- Grille horaire -->
+        <div>
+          <i class="far fa-clock"></i>
+          <p>Heures d'ouverture</p>
+          <div class="grid-2">
+            <p class="jour"><strong>Dimanche</strong></p>
+            <p>Fermé</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Lundi</strong></p>
+            <p>Fermé</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Mardi</strong></p>
+            <p>09h00 - 17h00</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Mercredi</strong></p>
+            <p>09h00 - 19h00</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Jeudi</strong></p>
+            <p>09h00 - 19h00</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Vendredi</strong></p>
+            <p>09h00 - 17h00</p>
+          </div>
+          <div class="grid-2">
+            <p class="jour"><strong>Samedi</strong></p>
+            <p>08h00 - 13h00</p>
+          </div>
+        </div>
+        prijgôj
+        <!-- fin de la grille horaire -->
+      </div>
+      <!-- fin de scheduled -->
+    </div>
 
     <footer class="center bg-dark"><p>Coiffure Prestige &copy; 2019</p></footer>
   </body>
