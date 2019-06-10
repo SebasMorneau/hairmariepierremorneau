@@ -155,15 +155,34 @@ button {
   margin-bottom: 20px;
 }
 
+
 .card {
   height: 350px;
   width: 300px;
-  background: url(img/profil_marie.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 }
+
+.emp1 {
+  background: url(img/profil_marie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emp2 {
+  background: url(img/marieclaude.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emp3 {
+  background: url(img/gabrielle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 .profile_card h3,
 .profile_card p {
