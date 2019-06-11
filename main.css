@@ -9,7 +9,7 @@ body {
   content: "";
   height: 100vh;
   width: 100%;
-  background-image: url("img/hair1.jpg");
+  background-image: url("img/lightblonde.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -155,7 +155,6 @@ button {
   margin-bottom: 20px;
 }
 
-
 .card {
   height: 350px;
   width: 300px;
@@ -181,8 +180,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 .profile_card h3,
 .profile_card p {
@@ -386,9 +383,7 @@ footer p {
   .left h5 {
     font-size: 10px;
   }
-  .container {
-    /* width: 100%; */
-  }
+
   .grid-2 h3 {
     font-size: 13px;
   }
