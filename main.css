@@ -2,14 +2,14 @@ body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .showcase::after {
-  content: "";
+  content: '';
   height: 100vh;
   width: 100%;
-  background-image: url("img/lightblonde.JPG");
+  background-image: url('img/lightblonde.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,8 +55,8 @@ body {
   padding: 4rem 1rem;
 }
 
-
-@media (max-width: 667px) {}
+@media (max-width: 667px) {
+}
 
 .grid-3 {
   display: grid;
@@ -94,23 +94,6 @@ body {
   color: #f4f4f4;
 }
 
-/* section des images de salon */
-
-
-.image {
-  background-image: url(img/salon1.jpeg);
-  width: 100%;
-  height: 800px;
-  opacity: 0.9;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-}
-
-
 /* Section de selection */
 /* Style the tab content */
 .tabcontent {
@@ -141,7 +124,6 @@ button {
   border-bottom-style: solid;
   border-color: black;
 }
-
 .tablinks {
   margin-bottom: -50px;
 }
@@ -174,7 +156,7 @@ button {
 }
 
 .profile_card {
-  height: 450px;
+  height: 500px;
   width: 300px;
   background-color: #fff5ee;
   overflow: hidden;
@@ -224,7 +206,6 @@ button {
 }
 
 ul li {
-  padding-left: 10px;
   font-size: 18px;
   transition: 1s;
 }
@@ -239,9 +220,8 @@ h4 {
 }
 
 h4:after {
-  content: "\00a0\00a0\00a0\00a0\00a0
-\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-
+  content: '\00a0\00a0\00a0\00a0\00a0
+\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
 }
 
 .left p {
@@ -251,7 +231,7 @@ h4:after {
 
 /* Scheduled */
 .scheduled {
-  background-image: url("img/scheduledCover.jpg");
+  background-image: url('img/scheduledCover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -472,7 +452,6 @@ footer p {
 
 /* Landscape */
 @media (max-height: 500px) {
-
   .content .title,
   .content .text {
     display: none;
