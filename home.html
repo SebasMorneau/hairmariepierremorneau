@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Coiffure Prestige</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+  <script src="main.js"></script>
+
+
+</head>
+
+<body>
+  <header class="showcase">
+    <div class="content">
+      <img src="img/logo.PNG" class="logo" alt="coiffure prestige" />
+      <div class="title">
+        <p>Une équipes de passionnées</p>
+      </div>
+      <div class="text">Professionnelle Schwarzkopf</div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container grid-3 center">
+      <div class="social_icon" onclick="window.location='https://www.facebook.com/Coiffureprestige0501/'">
+        <i class="fab fa-facebook fa-3x"></i>
+        <h3>Facebook</h3>
+        <p>Venez laisser un commentaire de votre experience!</p>
+      </div>
+      <div class="social_icon" onclick="window.location='http://instagram.com/hairmariemorneau'">
+        <i class="fab fa-instagram fa-3x"></i>
+        <h3>Instagram</h3>
+        <p>Venez jeter un coup d'oeil à nos création!</p>
+      </div>
+      <div class="social_icon"
+        onclick="window.location='https://www.google.com/maps/place/Coiffure+Prestige/@46.037532,-73.4504125,15z/data=!4m5!3m4!1s0x0:0x4ec9904954bf0f47!8m2!3d46.037532!4d-73.4504125'">
+        <i class="far fa-map fa-3x"></i>
+        <h3>Adresse</h3>
+        <p>133 rue Bernard, Joliette</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about bg-light">
+    <div class="container">
+      <div class="grid-2">
+        <button class="tablinks center" onclick="openTab(event, 'staff')">
+          <i class="fas fa-cut fa-7x"></i>
+          <div>
+            <h3>Notre Équipe</h3>
+          </div>
+        </button>
+        <button class="tablinks center" onclick="openTab(event, 'cash')">
+          <i class="fas fa-comments-dollar fa-7x"></i>
+          <div>
+            <h3>Nos Tarifs</h3>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- STAFF -->
+    <div id="staff" class="tabcontent">
+      <!-- cards de profil -->
+      <div class="container">
+        <div class="grid-3">
+          <div class="center">
+            <div class="profile_card">
+              <div class="card emp1"></div>
+              <h3>MARIE-PIERRE MORNEAU</h3>
+              <p>Professionnelle depuis 2012</p>
+              <ul>
+
+                  <!-- <li onclick="window.location=''"><i class="fab fa-instagram"></i></li> -->
+
+                </ul>
+            </div>
+          </div>
+
+          <!-- cards de profil -->
+
+          <div class="center">
+            <div class="profile_card">
+              <div class="card emp2"></div>
+              <h3>MARIE-CLAUDE DAUPHIN</h3>
+              <!-- <p>Professionnelle depuis 2012</p> -->
+              <!-- <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul> -->
+            </div>
+          </div>
+
+          <!-- cards de profil -->
+
+          <div class="center">
+            <div class="profile_card">
+              <div class="card emp3"></div>
+              <h3>GABRIELLE POLIQUIN</h3>
+              <!-- <p>Professionnelle depuis 2012</p> -->
+              <!-- <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul> -->
+            </div>
+          </div>
+
+          <!-- cards de profil -->
+
+          <!-- <div class="center">
+              <div class="profile_card">
+                <div class="card"></div>
+                <h3>MARIE-PIERRE MORNEAU</h3>
+                <p>Professionnelle depuis 2012</p>
+                <ul>
+                  <li><i class="fab fa-facebook-f"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fas fa-phone"></i></li>
+                </ul>
+              </div>
+            </div> -->
+
+          <!-- fin du grid-3 -->
+        </div>
+        <!-- fin du container -->
+      </div>
+      <!-- fin du tabcontent -->
+    </div>
+    <!-- Prix -->
+    <div id="cash" class="tabcontent">
+      <div class="container">
+        <h4>Services</h4>
+        <div class="grid-2">
+          <div class="left">
+            <h5>
+              Mèche au papier standard
+            </h5>
+            <p>Durée flexible / 55$ à 140$</p>
+            <p>Avec coup et mise en plis inclus.</p>
+          </div>
+          <div class="left">
+            <h5>
+              Technique balayage/ombré
+            </h5>
+            <p>Durée flexible / 75$ à 170$</p>
+            <p>Avec coup et mise en plis inclus.</p>
+          </div>
+          <div class="left">
+            <h5>
+              Coloration/coupe/mise en plis
+            </h5>
+            <p>Durée flexible / 58$</p>
+            <p>Ajustement de prix pour extra tube.</p>
+          </div>
+          <div class="left">
+            <h5>
+              Coiffure haute
+            </h5>
+            <p>Durée flexible / 35$</p>
+          </div>
+          <div class="left">
+            <h5>
+              Mise en plis
+            </h5>
+            <p>Durée flexible / 21$</p>
+          </div>
+          <div class="left">
+            <h5>
+              Coupe + mise en plis
+            </h5>
+            <p>Durée flexible / 36$</p>
+          </div>
+          <div class="left">
+            <h5>
+              Coupe homme
+            </h5>
+            <p>Durée flexible / 16$</p>
+          </div>
+          <div class="left">
+            <h5>
+              Coupe femme
+            </h5>
+            <p>Durée flexible / 21$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fin de la section -->
+  </section>
+
+  <!-- Section horaire -->
+
+  <div class="scheduled">
+    <div class="container grid-2 center">
+      <!-- Grille horaire -->
+      <div>
+        <i class="far fa-clock"></i>
+        <p>Heures d'ouverture</p>
+        <div class="grid-2">
+          <p class="jour"><strong>Dimanche</strong></p>
+          <p>Fermé</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Lundi</strong></p>
+          <p>Fermé</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Mardi</strong></p>
+          <p>09h00 - 17h00</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Mercredi</strong></p>
+          <p>09h00 - 19h00</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Jeudi</strong></p>
+          <p>09h00 - 19h00</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Vendredi</strong></p>
+          <p>09h00 - 17h00</p>
+        </div>
+        <div class="grid-2">
+          <p class="jour"><strong>Samedi</strong></p>
+          <p>08h00 - 13h00</p>
+        </div>
+      </div>
+
+      <!-- fin de la grille horaire -->
+      <div class="contact">
+        <i class="fas fa-phone"></i>
+          <p>450-398-0501</p>
+
+      </div>
+    </div>
+
+    <!-- fin de scheduled -->
+  </div>
+
+  <footer class="center bg-dark">
+    <p>Joliette</p>
+    </p>
+    <p>Coiffure Prestige &copy; 2019</p>
+  </footer>
+
+</body>
+
+</html>
